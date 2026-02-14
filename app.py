@@ -328,7 +328,7 @@ def create_interactive_map(locations, map_image_base64, heart_emoji="💖"):
             }}
             
             .map-container img {{
-                width: 80%;
+                width: 100%;
                 opacity: 0.65;
                 display: block;
                 border-radius: 20px;
