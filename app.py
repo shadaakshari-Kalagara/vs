@@ -77,8 +77,8 @@ st.markdown(
             justify-content: center;
             align-items: center;
             width: 100%;
-            margin: 40px 0;
-            padding: 0;
+            margin: 40px 0px;
+            padding: 0px;
         }}
 
         /* Center the Streamlit button wrapper */
@@ -100,7 +100,7 @@ st.markdown(
             color: white;
             font-size: 1.6em;
             padding: 22px 22px;
-            border-radius: 50px;
+            border-radius: 40px;
             font-family: 'Georgia', serif;
             font-weight: bold;
             box-shadow: 0 4px 15px rgba(245, 87, 108, 0.4);
@@ -110,7 +110,7 @@ st.markdown(
             min-width: 350px;
             height: auto;
             line-height: 1.3;
-            margin: 30px 0px;
+            margin: 20px 0px;
         }}
 
         .stButton > button:hover {{
@@ -122,7 +122,7 @@ st.markdown(
         @media (max-width: 768px) {{
             .main-title {{
                 font-size: 2.5em;
-                margin-bottom: 20px;
+                margin-bottom: 10px;
             }}
             .stButton > button {{
                 font-size: 1.4em;
@@ -321,7 +321,7 @@ def create_interactive_map(locations, map_image_base64, heart_emoji="💖"):
                 position: relative;
                 width: 100%;
                 max-width: 1200px;
-                margin: 0 auto;
+                margin: 0px 0px;
                 border-radius: 10px;
                 overflow: hidden;
                 box-shadow: 0 15px 50px rgba(0,0,0,0.35);
@@ -331,7 +331,7 @@ def create_interactive_map(locations, map_image_base64, heart_emoji="💖"):
                 width: 91%;
                 opacity: 0.65;
                 display: block;
-                margin: 0 auto;
+                margin: 0px auto;
                 border-radius: 20px;
             }}
             
@@ -568,9 +568,9 @@ elif st.session_state.current_page == "japan":
     if japan_map_base64:
         st.markdown(
             f"""
-            <div style="text-align:center; margin-top:0px; margin-bottom:10px;">
+            <div style="text-align:center; margin-top:0px; margin-bottom:0px;">
                 <img src="data:image/jpeg;base64,{japan_map_base64}" 
-                    style="width:80%; max-width:1200px; border-radius:20px;" />
+                    style="width:84%; max-width:1200px; border-radius:20px;" />
             </div>
             """,
             unsafe_allow_html=True
@@ -585,25 +585,25 @@ elif st.session_state.current_page == "japan":
         components.html("""
         <div style="
             background: linear-gradient(135deg, #FFB6D9 0%, #FF69B4 100%);
-            padding: 30px 30px;
+            padding: 25px 20px;
             border-radius: 20px;
             text-align: center;
-            box-shadow: 0 8px 16px rgba(255, 105, 180, 0.3);
-            margin: 35px 0;
+            box-shadow: 0 5px 16px rgba(255, 105, 180, 0.3);
+            margin: 25px;
         ">
-            <h2 style='color: white; font-family: Georgia, serif; font-size: 2em; margin-bottom: 30px; text-shadow: 2px 2px 4px rgba(0,0,0,0.2);'>
+            <h2 style='color: white; font-family: Georgia, serif; font-size: 1.8em; margin-bottom: 5px; text-shadow: 2px 2px 4px rgba(0,0,0,0.2);'>
                 Will you be my forever valentine?
             </h2>
-            <div style="margin-top: 20px;">
-                <label style="color: white; font-size: 1.6em; margin-right: 20px;">
+            <div style="margin-top: 5px;">
+                <label style="color: white; font-size: 1.4em; margin-right: 20px;">
                     <input type="radio" name="valentine" value="yes" style="margin-right: 8px;"> Yes
                 </label>
-                <label style="color: white; font-size: 1.6em;">
+                <label style="color: white; font-size: 1.4em;">
                     <input type="radio" name="valentine" value="forever" style="margin-right: 8px;"> Forever
                 </label>
             </div>
         </div>
-        """, height=280)
+        """, height=230)
 
 # Footer
 st.markdown("""
@@ -616,7 +616,7 @@ st.markdown("""
     font-size: 1.3em;
     font-family: 'Georgia', serif;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-    margin: 20px auto 30px;
+    margin: 0px auto 10px;
     width: 70%;
     max-width: 800px;
 ">
