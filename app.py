@@ -575,7 +575,7 @@ elif st.session_state.current_page == "japan":
             unsafe_allow_html=True
         )
     else:
-        st.error("⚠️ Japan map not found!")
+        st.error("Japan map not found!")
         st.info("Please add Japan map at: assets/photos/japan.jpg")
 
 # Footer
@@ -596,3 +596,4 @@ st.markdown("""
     I hope to annoy/surprise you for the next 50 Valentine's days 💕
 </div>
 """, unsafe_allow_html=True)
+
