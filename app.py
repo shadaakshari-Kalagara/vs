@@ -99,7 +99,7 @@ st.markdown(
             background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
             color: white;
             font-size: 1.6em;
-            padding: 25px 60px;
+            padding: 22px 22px;
             border-radius: 50px;
             font-family: 'Georgia', serif;
             font-weight: bold;
@@ -110,7 +110,7 @@ st.markdown(
             min-width: 350px;
             height: auto;
             line-height: 1.3;
-            margin: 0 auto;
+            margin: 30px 0px;
         }}
 
         .stButton > button:hover {{
@@ -317,20 +317,21 @@ def create_interactive_map(locations, map_image_base64, heart_emoji="💖"):
                 padding: 20px;
             }}
             
-            .map-container {{
+                .map-container {{
                 position: relative;
-                width: 80%;
+                width: 100%;
                 max-width: 1200px;
                 margin: 0 auto;
-                border-radius: 20px;
+                border-radius: 10px;
                 overflow: hidden;
                 box-shadow: 0 15px 50px rgba(0,0,0,0.35);
             }}
-            
+
             .map-container img {{
-                width: 100%;
+                width: 91%;
                 opacity: 0.65;
                 display: block;
+                margin: 0 auto;
                 border-radius: 20px;
             }}
             
@@ -425,10 +426,10 @@ def create_interactive_map(locations, map_image_base64, heart_emoji="💖"):
             .popup-title {{
                 color: #764ba2;
                 font-size: 2.4em;
-                margin-bottom: 30px;
+                margin-bottom: 10px;
                 text-align: center;
                 font-weight: bold;
-                padding: 0 10px;
+                padding: 0px 0px;
             }}
             
             .popup-image {{
@@ -615,7 +616,7 @@ st.markdown("""
     font-size: 1.3em;
     font-family: 'Georgia', serif;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-    margin: 40px auto 30px;
+    margin: 20px auto 30px;
     width: 70%;
     max-width: 800px;
 ">
