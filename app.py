@@ -568,7 +568,7 @@ elif st.session_state.current_page == "japan":
     if japan_map_base64:
         st.markdown(
             f"""
-            <div style="text-align:center; margin-top:20px; margin-bottom:60px;">
+            <div style="text-align:center; margin-top:0px; margin-bottom:10px;">
                 <img src="data:image/jpeg;base64,{japan_map_base64}" 
                     style="width:80%; max-width:1200px; border-radius:20px;" />
             </div>
