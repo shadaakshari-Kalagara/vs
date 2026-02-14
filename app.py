@@ -567,7 +567,7 @@ elif st.session_state.current_page == "japan":
     if japan_map_base64:
         st.markdown(
             f"""
-            <div style="text-align:center; margin-top:20px;">
+            <div style="text-align:center; margin-top:20px; margin-bottom:60px;">
                 <img src="data:image/jpeg;base64,{japan_map_base64}" 
                     style="width:80%; max-width:1200px; border-radius:20px;" />
             </div>
@@ -577,6 +577,32 @@ elif st.session_state.current_page == "japan":
     else:
         st.error("Japan map not found!")
         st.info("Please add Japan map at: assets/photos/japan.jpg")
+    
+    # Valentine's Day Question
+    col1, col2, col3 = st.columns([1, 2, 1])
+    with col2:
+        components.html("""
+        <div style="
+            background: linear-gradient(135deg, #FFB6D9 0%, #FF69B4 100%);
+            padding: 30px 30px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 8px 16px rgba(255, 105, 180, 0.3);
+            margin: 35px 0;
+        ">
+            <h2 style='color: white; font-family: Georgia, serif; font-size: 2em; margin-bottom: 30px; text-shadow: 2px 2px 4px rgba(0,0,0,0.2);'>
+                Will you be my forever valentine?
+            </h2>
+            <div style="margin-top: 20px;">
+                <label style="color: white; font-size: 1.6em; margin-right: 20px;">
+                    <input type="radio" name="valentine" value="yes" style="margin-right: 8px;"> Yes
+                </label>
+                <label style="color: white; font-size: 1.6em;">
+                    <input type="radio" name="valentine" value="forever" style="margin-right: 8px;"> Forever
+                </label>
+            </div>
+        </div>
+        """, height=280)
 
 # Footer
 st.markdown("""
