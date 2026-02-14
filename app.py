@@ -3,7 +3,10 @@ from pathlib import Path
 import base64
 import streamlit.components.v1 as components
 
-# Page configuration
+# I KNOW YOU'D VISIT THIS REPO DHADIYAAAAA
+
+
+
 st.set_page_config(
     page_title="Our Journey 💖",
     layout="wide",
@@ -133,7 +136,7 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-# Location data
+
 HYD_LOCATIONS = [
     {
         "name": "Charminar",
@@ -230,11 +233,11 @@ HYD_LOCATIONS = [
 
 ]
 
-# Session state initialization
+
 if "current_page" not in st.session_state:
     st.session_state.current_page = "hyderabad"
 
-# Helper function to encode images
+
 def get_base64_image(image_path):
     try:
         with open(image_path, "rb") as f:
@@ -243,7 +246,7 @@ def get_base64_image(image_path):
         st.warning(f"Image load error ({image_path}): {str(e)}")
         return None
 
-# Interactive map generator
+
 def create_interactive_map(locations, map_image_base64, heart_emoji="💖"):
     # Build popups HTML
     popups_html = ""
@@ -274,10 +277,9 @@ def create_interactive_map(locations, map_image_base64, heart_emoji="💖"):
         </div>
         '''
     
-    # Build hearts HTML
+
     hearts_html = ""
     for i, loc in enumerate(locations):
-        # Safety clamp to prevent off-screen pins
         x = max(3, min(97, loc['x']))
         y = max(3, min(97, loc['y']))
         hearts_html += f'''
@@ -549,11 +551,11 @@ if st.session_state.current_page == "hyderabad":
         st.error("⚠️ Hyderabad map not found!")
         st.info(f"Please add map at: assets/photos/hyd.png")
 
-# Japan map
+
 elif st.session_state.current_page == "japan":
     st.markdown("<h1 class='main-title'>Our Soon to go...Japan Adventure 🗾💖</h1>", unsafe_allow_html=True)
 
-    # PERFECTLY CENTERED BACK BUTTON
+ 
     col1, col2, col3 = st.columns([1, 2, 1])
     with col2:
         if st.button("← Back to Hyderabad", key="back_hyd", use_container_width=True):
