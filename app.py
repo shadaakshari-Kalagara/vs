@@ -3,12 +3,12 @@ from pathlib import Path
 import base64
 import streamlit.components.v1 as components
 
-# I KNOW YOU'D VISIT THIS REPO DHADIYAAAAA
+# I KNOW YOU'D VISIT THIS REPO DHADIYAAAAAAA
 
 
 
 st.set_page_config(
-    page_title="Our Journey 💖",
+    page_title="V&S Hyd Journey 💖",
     layout="wide",
     initial_sidebar_state="collapsed"
 )
