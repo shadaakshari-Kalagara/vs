@@ -319,7 +319,7 @@ def create_interactive_map(locations, map_image_base64, heart_emoji="💖"):
             
             .map-container {{
                 position: relative;
-                width: 80%;
+                width: 100%;
                 max-width: 1200px;
                 margin: 0 auto;
                 border-radius: 20px;
